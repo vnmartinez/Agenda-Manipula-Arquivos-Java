@@ -36,7 +36,7 @@ public class Agenda {
             break;
         case 2:
             try {
-                leitor = new FileReader("arq.txt");
+                leitor = new FileReader("arquivo_texto.txt");
                 BufferedReader buffer = new BufferedReader(leitor);
                 linha = buffer.readLine();
                 while (linha != null){
