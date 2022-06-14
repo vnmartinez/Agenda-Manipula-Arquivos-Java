@@ -24,9 +24,9 @@ public class Agenda {
             contato.telefone = sc.nextLine();
 
             try {             
-                gravador = new FileWriter("arq.txt");
-                gravador.write("Contato: "+contato.nome+"\n");    
-                gravador.write("Telefone: "+contato.telefone+"\n");
+                gravador = new FileWriter("arq.txt",true);
+                gravador.write("Contato: "+contato.nome);    
+                gravador.write("Telefone: "+contato.telefone+"\n\n");
                 gravador.close();
                 } 
                 catch (Exception e) {
